@@ -1,0 +1,428 @@
+Script started on Thu 13 Feb 2014 10:04:54 PM CST
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ rails c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > 17 + 42   # Integer addition
+ => 59 
+2.0.0-p353 :002 > ""
+ => "" 
+2.0.0-p353 :003 > foo[K[K[K"foo"
+ => "foo" 
+2.0.0-p353 :004 > f[K"foo" + "bar"
+ => "foobar" 
+2.0.0-p353 :005 > first_name = "John"
+ => "John" 
+2.0.0-p353 :006 > "#{first_name} Hartl"[1P"[1P"[1P"[1P"[1P"Z"a"n"c"a"n"a"r"o"
+ => "John Zancanaro" 
+2.0.0-p353 :007 > last_name = Zancanaro[K[K[K[K[K[K[K[K[K"Zancanaro"
+ => "Zancanaro" 
+2.0.0-p353 :008 > first_name + " " + lastn[K_name
+ => "John Zancanaro" 
+2.0.0-p353 :009 > "#{first_name} #{last_name}"
+ => "John Zancanaro" 
+2.0.0-p353 :010 > puts "foo"
+foo
+ => nil 
+2.0.0-p353 :011 > pring "foo"
+NoMethodError: undefined method `pring' for main:Object
+	from (irb):11
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :012 > pring "foo"[1P "foo"t "foo"
+foo => nil 
+2.0.0-p353 :013 > print "foo"\"n"
+foo
+ => nil 
+2.0.0-p353 :014 > '\n'
+ => "\\n" 
+2.0.0-p353 :015 > "foobar".lenght
+NoMethodError: undefined method `lenght' for "foobar":String
+	from (irb):15
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :016 > "foobar".lenght[K[Kth
+ => 6 
+2.0.0-p353 :017 > "foobar".empty?
+ => false 
+2.0.0-p353 :018 > "foobar".empty?[1P".empty?[1P".empty?[1P".empty?[1P".empty?[1P".empty?[1P".empty?
+ => true 
+2.0.0-p353 :019 > s = "foobar"
+ => "foobar" 
+2.0.0-p353 :020 > if s.empty?
+2.0.0-p353 :021?>   "The string is empty"
+2.0.0-p353 :022?>   else
+2.0.0-p353 :023 >     "THe [K[K[Khe string is nonempty"
+2.0.0-p353 :024?>   end
+ => "The string is nonempty" 
+2.0.0-p353 :025 > x + [K[K= f[K"foo"
+ => "foo" 
+2.0.0-p353 :026 > y = ""
+ => "" 
+2.0.0-p353 :027 > puts "Both strings are empty" if x.empty? && y.empty?
+ => nil 
+2.0.0-p353 :028 > puts "One of the strings is empty" if x.empty? || y.empty?
+One of the strings is empty
+ => nil 
+2.0.0-p353 :029 > puts "x is not empty" if !x.empty?
+x is not empty
+ => nil 
+2.0.0-p353 :030 > nil.to_s
+ => "" 
+2.0.0-p353 :031 > nil.empty?
+NoMethodError: undefined method `empty?' for nil:NilClass
+	from (irb):31
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :032 > nil.to_s.empty?
+ => true 
+2.0.0-p353 :033 > f[K"foo".nil?
+ => false 
+2.0.0-p353 :034 > "".nil?
+ => false 
+2.0.0-p353 :035 > nil.nil?
+ => true 
+2.0.0-p353 :036 > if nil
+2.0.0-p353 :037?>   true
+2.0.0-p353 :038?>   else
+2.0.0-p353 :039 >     false
+2.0.0-p353 :040?>   end
+ => false 
+2.0.0-p353 :041 > if 0
+2.0.0-p353 :042?>   true
+2.0.0-p353 :043?>   else
+2.0.0-p353 :044 >     false
+2.0.0-p353 :045?>   end
+ => true 
+2.0.0-p353 :046 > true[K[K[K[Kfrg [K[K[K[Kdef string_message [K(string)
+2.0.0-p353 :047?>   if string.empty?
+2.0.0-p353 :048?>     "It's an empty string!"
+2.0.0-p353 :049?>     else
+2.0.0-p353 :050 >       "The string is nonempty."
+2.0.0-p353 :051?>     end
+2.0.0-p353 :052?>   end
+ => nil 
+2.0.0-p353 :053 > puts string_message("")
+It's an empty string!
+ => nil 
+2.0.0-p353 :054 > puts string_message("")f")o")o")b")a")r")
+The string is nonempty.
+ => nil 
+2.0.0-p353 :055 > def string_message(string)
+2.0.0-p353 :056?>   return "IT[Kt's an empty string!" if string.empty?
+2.0.0-p353 :057?>   return th[K[K"The string is nonempty."
+2.0.0-p353 :058?>   end
+ => nil 
+2.0.0-p353 :059 > endreturn "The string is nonempty."It's an empty string!" if string.empty?[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pdef string_message(string)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cputs string_message("foobar")")[K
+It's an empty string!
+ => nil 
+2.0.0-p353 :060 > puts string_message("")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cend[Kreturn "The string is nonempty."It's an empty string!" if string.empty?[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pdef string_message(string)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cputs string_message("foobar")
+The string is nonempty.
+ => nil 
+2.0.0-p353 :061 > 
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ rai[K[K[Krails c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > "foo bar     baz".split
+ => ["foo", "bar", "baz"] 
+2.0.0-p353 :002 > "fooxbarxbazx".split('x')
+ => ["foo", "bar", "baz"] 
+2.0.0-p353 :003 > a = [42, 8, 17]
+ => [42, 8, 17] 
+2.0.0-p353 :004 > a[0]
+ => 42 
+2.0.0-p353 :005 > a[0]-0]10][1P]
+ => 17 
+2.0.0-p353 :006 > a[-1]21]
+ => nil 
+2.0.0-p353 :007 > a[-21][1P]
+ => 8 
+2.0.0-p353 :008 > a
+ => [42, 8, 17] 
+2.0.0-p353 :009 > a.first
+ => 42 
+2.0.0-p353 :010 > a.second
+ => 8 
+2.0.0-p353 :011 > a.thrir[K[K[Kird
+ => 17 
+2.0.0-p353 :012 > a.last
+ => 17 
+2.0.0-p353 :013 > a.last == a[-1]
+ => true 
+2.0.0-p353 :014 > x = a.lenght
+NoMethodError: undefined method `lenght' for [42, 8, 17]:Array
+	from (irb):14
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :015 > x = a.lenghttht[1Pt[Kj
+NoMethodError: undefined method `lengtj' for [42, 8, 17]:Array
+	from (irb):15
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :016 > x = a.lengtjhj[K
+ => 3 
+2.0.0-p353 :017 > x == 2[K3
+ => true 
+2.0.0-p353 :018 > x == 1
+ => false 
+2.0.0-p353 :019 > x!=1
+ => true 
+2.0.0-p353 :020 > a
+ => [42, 8, 17] 
+2.0.0-p353 :021 > a.sort
+ => [8, 17, 42] 
+2.0.0-p353 :022 > a.reverse
+ => [17, 8, 42] 
+2.0.0-p353 :023 > a.shuffle
+ => [42, 17, 8] 
+2.0.0-p353 :024 > a.shuffle
+ => [42, 17, 8] 
+2.0.0-p353 :025 > a.shuffle
+ => [42, 17, 8] 
+2.0.0-p353 :026 > a
+ => [42, 8, 17] 
+2.0.0-p353 :027 > a.sort!
+ => [8, 17, 42] 
+2.0.0-p353 :028 > a
+ => [8, 17, 42] 
+2.0.0-p353 :029 > a.push(6)
+ => [8, 17, 42, 6] 
+2.0.0-p353 :030 > a << 7
+ => [8, 17, 42, 6, 7] 
+2.0.0-p353 :031 > a<<"foo"<<"bar"
+ => [8, 17, 42, 6, 7, "foo", "bar"] 
+2.0.0-p353 :032 > a
+ => [8, 17, 42, 6, 7, "foo", "bar"] 
+2.0.0-p353 :033 > a.join
+ => "8174267foobar" 
+2.0.0-p353 :034 > a.join(', ')
+ => "8, 17, 42, 6, 7, foo, bar" 
+2.0.0-p353 :035 > 0..9
+ => 0..9 
+2.0.0-p353 :036 > 0..9.to_a
+NoMethodError: undefined method `to_a' for 9:Fixnum
+	from (irb):36
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :037 > (0.99[K[K.0[K9).to_a
+ => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :038 > a
+ => [8, 17, 42, 6, 7, "foo", "bar"] 
+2.0.0-p353 :039 > a = %w[foo bar baz quux]         # Use %w to make a string arr ay.
+ => ["foo", "bar", "baz", "quux"] 
+2.0.0-p353 :040 > a[0..2]
+ => ["foo", "bar", "baz"] 
+2.0.0-p353 :041 > a = (0..9).to_a
+ => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :042 > a[2..(a.length-1)]  
+ => [2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :043 > a[2..-1]   
+ => [2, 3, 4, 5, 6, 7, 8, 9] 
+2.0.0-p353 :044 > ('a'..'e').to_a
+ => ["a", "b", "c", "d", "e"] 
+2.0.0-p353 :045 > (1..5).each { |i| puts 2 * i }
+2
+4
+6
+8
+10
+ => 1..5 
+2.0.0-p353 :046 > (1..5).each do |i|
+2.0.0-p353 :047 >     puts 2*1[Ki
+2.0.0-p353 :048?>   end
+2
+4
+6
+8
+10
+ => 1..5 
+2.0.0-p353 :049 > (1..5).each do |number|
+2.0.0-p353 :050 >     puts 2*number
+2.0.0-p353 :051?>   puts '--'
+2.0.0-p353 :052?>   end
+2
+--
+4
+--
+6
+--
+8
+--
+10
+--
+ => 1..5 
+2.0.0-p353 :053 > 3.times { puts "Betelgeuse!" } 
+Betelgeuse!
+Betelgeuse!
+Betelgeuse!
+ => 3 
+2.0.0-p353 :054 > (1..5).map { |i| i**2 }   
+ => [1, 4, 9, 16, 25] 
+2.0.0-p353 :055 > ('a'..'z').to_a  
+ => ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"] 
+2.0.0-p353 :056 > ('a'..'z').to_a.shuffle     
+ => ["g", "c", "r", "e", "y", "s", "w", "x", "m", "k", "z", "o", "j", "a", "t", "p", "b", "n", "q", "v", "u", "i", "f", "h", "d", "l"] 
+2.0.0-p353 :057 > ('a'..'z').to_a.shuffle[0..7]
+ => ["l", "y", "u", "r", "d", "s", "x", "f"] 
+2.0.0-p353 :058 > ('a'..'z').to_a.shuffle[0..7].join
+ => "hvnpqysc" 
+2.0.0-p353 :059 > user = {}
+ => {} 
+2.0.0-p353 :060 > user["first_name"] = "Michael"
+ => "Michael" 
+2.0.0-p353 :061 > user["last_name"] = "Hartl" 
+ => "Hartl" 
+2.0.0-p353 :062 > user
+ => {"first_name"=>"Michael", "last_name"=>"Hartl"} 
+2.0.0-p353 :063 > user = { "first_name" => "Michael", "last_name" => "Hartl" }[1P[1P[1P[1P[1P[1@Z[1@a[1@n[1@c[1@a[1@na" } [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr" }}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co" }[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C", "last_name" => "Zancanaro" }[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C", "last_name" => "Zancanaro" } [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1@J[1@o[1@h[1@n
+ => {"first_name"=>"John", "last_name"=>"Zancanaro"} 
+2.0.0-p353 :064 > "name".split('')
+ => ["n", "a", "m", "e"] 
+2.0.0-p353 :065 > :name.split('')
+NoMethodError: undefined method `split' for :name:Symbol
+	from (irb):65
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :066 > "foobar".reverse
+ => "raboof" 
+2.0.0-p353 :067 > user = { :name => "Michael Hartl", :email => "michael@example. com" }[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C", :email => "michael@example.co[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C", :email => "michael@example.com[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C", :email => "michael@example.com"[1P }[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C", :email => "michael@example.com" [1P}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C", :email => "michael@example.com" }[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C", :email => "michael@example.com" } [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1@J[1@o[1@h[1@n[1@ [1@Za", :email => "michael@example.com" } [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn", :email => "michael@example.com" }}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc", :email => "michael@example.com" }[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca", :email => "michael@example.com" }[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn", :email => "michael@example.com" }[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca", :email => "michael@example.co[1@m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr", :email => "michael@example.c[1@o[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co", :email => "michael@example.[1@c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cichael@example.c[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cchael@example.co[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chael@example.com[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cael@example.com"[1P }[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cel@example.com" [1P}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl@example.com" }[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@example.com" } [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cj@example.com" }}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co@example.com" }[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch@example.com" }[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn@example.com" }[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+ => {:name=>"John Zancanaro", :email=>"john@example.com"} 
+2.0.0-p353 :068 > user[:name}[K]
+ => "John Zancanaro" 
+2.0.0-p353 :069 > user[:password]
+ => nil 
+2.0.0-p353 :070 > s = foo[K[K[K"foobar"
+ => "foobar" 
+2.0.0-p353 :071 > s.class
+ => String 
+2.0.0-p353 :072 > s = String.new(f[K:[K"foobar")
+ => "foobar" 
+2.0.0-p353 :073 > s.class
+ => String 
+2.0.0-p353 :074 > ss[K == "foobar"
+ => true 
+2.0.0-p353 :075 > a = Array.new([1, 3, 2])
+ => [1, 3, 2] 
+2.0.0-p353 :076 > a.class
+ => Array 
+2.0.0-p353 :077 > s
+ => "foobar" 
+2.0.0-p353 :078 > s.class.superclass
+ => Object 
+2.0.0-p353 :079 > s.class.superclass.superclass
+ => BasicObject 
+2.0.0-p353 :080 > s.class.superclass.superclass.superclass
+ => nil 
+2.0.0-p353 :081 > def palindrome?(string)[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kclass Word
+2.0.0-p353 :082?>   d[Kdef palindrome?(string)
+2.0.0-p353 :083?>     string == string.reverse
+2.0.0-p353 :084?>     end
+2.0.0-p353 :085?>   end
+ => nil 
+2.0.0-p353 :086 > w = wo[K[KWord.new
+ => #<Word:0x000000028a1748> 
+2.0.0-p353 :087 > w.palindrome?("F[Kfoobar")
+ => false 
+2.0.0-p353 :088 > w.palindrome?("foobar")[1P")[1P")[1P")[1P")[1P")[1P")l")e")v")e")l")
+ => true 
+2.0.0-p353 :089 > w.palindrome?("level")Llevel")[1Pevel")
+ => false 
+2.0.0-p353 :090 > class Word < String 
+2.0.0-p353 :091?>   def palindrome?
+2.0.0-p353 :092?>     sl[Kelf.[K == self.reverse
+2.0.0-p353 :093?>     end
+2.0.0-p353 :094?>   end
+TypeError: superclass mismatch for class Word
+	from (irb):90
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :095 > s = Word.new(leve[K[K[K[K"level")
+ArgumentError: wrong number of arguments (1 for 0)
+	from (irb):95:in `initialize'
+	from (irb):95:in `new'
+	from (irb):95
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :096 > s = Word.new("level")end[K[K[K[Ks = Word.new("level")
+ArgumentError: wrong number of arguments (1 for 0)
+	from (irb):96:in `initialize'
+	from (irb):96:in `new'
+	from (irb):96
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :097 > exit[K[K[K[K
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ rails c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > "level".o[Kpalindrome?
+NoMethodError: undefined method `palindrome?' for "level":String
+	from (irb):1
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :002 > class Str[Kring
+2.0.0-p353 :003?>   def
+2.0.0-p353 :004 >       palindrome?
+2.0.0-p353 :005?>     self == self.reverse
+2.0.0-p353 :006?>     end
+2.0.0-p353 :007?>   end
+ => nil 
+2.0.0-p353 :008 > "deified".palindrome?
+ => true 
+2.0.0-p353 :009 > 
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ ral[Kis[Kls c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > controller = StaticPagesController.new
+ => #<StaticPagesController:0x00000003e77658 @_routes=nil, @_action_has_layout=true, @_headers={"Content-Type"=>"text/html"}, @_status=200, @_request=nil, @_response=nil> 
+2.0.0-p353 :002 > controller.class
+ => StaticPagesController 
+2.0.0-p353 :003 > controller.class.superclass
+ => ApplicationController 
+2.0.0-p353 :004 > controller.class.superclass.superclass
+ => ActionController::Base 
+2.0.0-p353 :005 > controller.class.superclass.superclass.superclass
+ => ActionController::Metal 
+2.0.0-p353 :006 > controller.class.superclass.superclass.superclass.superclass
+ => AbstractController::Base 
+2.0.0-p353 :007 > controller.class.superclass.superclass.superclass.superclass.s uperclass
+ => Object 
+2.0.0-p353 :008 > controller.home
+ => nil 
+2.0.0-p353 :009 > 
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ rails c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > require [K[K[K[K[K[K[K[Krequire './example_user' 
+ => true 
+2.0.0-p353 :002 > example = user[K[K[K[KUser.new
+ => 
