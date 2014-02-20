@@ -1,0 +1,42 @@
+Script started on Fri 14 Feb 2014 12:20:41 AM CST
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ rails c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > def string_shuffle(s)
+2.0.0-p353 :002?>   s.split("[K'').shuffle.join(''_[K)
+2.0.0-p353 :003?>   end
+ => nil 
+2.0.0-p353 :004 > string_shuffle("foobar")
+ => "orfoab" 
+2.0.0-p353 :005 > 
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ rails c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > class String
+2.0.0-p353 :002?>   def shuffle
+2.0.0-p353 :003?>     self.split('').shuffle.join('')
+2.0.0-p353 :004?>     end
+2.0.0-p353 :005?>   end
+ => nil 
+2.0.0-p353 :006 > "foobar".shuffle
+ => "afoobr" 
+2.0.0-p353 :007 > 
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ rails c
+Loading development environment (Rails 4.0.2)
+2.0.0-p353 :001 > person1 = {first[K[K[K[K[K:first => 'Al',    :last => 'Bundy'}[1P'}[1P'}[1P'}[1P'}[1P'}Z'}a'}n'}c'}a'}n'}a'}r'}o'}[1P[1P[1@M[1@i[1@k[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ => {:first=>"Mike", :last=>"Zancanaro"} 
+2.0.0-p353 :002 > person2 = {:first => 'Peggy', :last => 'Bundy'}[C[1P[1P[1P[1P[1P[1@D[1@i[1@a[1@n[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pundy'}[1Pndy'}[1Pdy'}[1Py'}[1P'}Z'}a'}n'}c'}a'}n'}a'}r'}o'}
+ => {:first=>"Diane", :last=>"Zancanaro"} 
+2.0.0-p353 :003 > person2 = {:first => 'Diane', :last => 'Zancanaro'}[1P[1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1@J[1@o[1@h[1@n[C[C[C[C[C[C[C[C[C
+ => {:first=>"John", :last=>"Zancanaro"} 
+2.0.0-p353 :004 > params = {
+2.0.0-p353 :005 >     :father => person1,
+2.0.0-p353 :006 >     :mother => person2,
+2.0.0-p353 :007 >     :child => person3
+2.0.0-p353 :008?>   }
+ => {:father=>{:first=>"Mike", :last=>"Zancanaro"}, :mother=>{:first=>"Diane", :last=>"Zancanaro"}, :child=>{:first=>"John", :last=>"Zancanaro"}} 
+2.0.0-p353 :009 > params[K[K[K[K[K[Kparams[:father][:first] #=> 'Al'[K[K[KMike'
+ => "Mike" 
+2.0.0-p353 :010 > 
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ exit
+exit
+
+Script done on Fri 14 Feb 2014 12:25:37 AM CST

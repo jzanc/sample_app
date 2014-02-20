@@ -425,4 +425,39 @@ Loading development environment (Rails 4.0.2)
 2.0.0-p353 :001 > require [K[K[K[K[K[K[K[Krequire './example_user' 
  => true 
 2.0.0-p353 :002 > example = user[K[K[K[KUser.new
- => 
+ => #<User:0x00000005296d50 @name=nil, @email=nil> 
+2.0.0-p353 :003 > example.name
+ => nil 
+2.0.0-p353 :004 > example.name = "Example User"
+ => "Example User" 
+2.0.0-p353 :005 > example.email = "user@w[Kexample.com"
+ => "user@example.com" 
+2.0.0-p353 :006 > example.formatted_email
+ => "Example User <user@example.com>" 
+2.0.0-p353 :007 > rm example_user.rb
+NameError: undefined local variable or method `example_user' for main:Object
+	from (irb):7
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:90:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands/console.rb:9:in `start'
+	from /home/jzanc/.rvm/gems/ruby-2.0.0-p353@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/commands.rb:62:in `<top (required)>'
+	from bin/rails:4:in `require'
+	from bin/rails:4:in `<main>'
+2.0.0-p353 :008 > 
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ rails c[K[K[K[K[K[K[Krm example_user.rb
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ git add .
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ git commit -m "Add a full_ title helper"
+[master a9bfee0] Add a full_title helper
+ 5 files changed, 458 insertions(+), 19 deletions(-)
+ create mode 100644 typescript
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ git merge static[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit push
+Username for 'https://github.com': jzanc
+Password for 'https://jzanc@github.com': 
+To https://github.com/jzanc/sample_app.git
+   2d6af01..a9bfee0  master -> master
+]0;jzanc@jzanc-HP: ~/Documents/CS369/Projects/sample_appjzanc@jzanc-HP:~/Documents/CS369/Projects/sample_app$ exit
+exit
+
+Script done on Thu 13 Feb 2014 10:56:49 PM CST
