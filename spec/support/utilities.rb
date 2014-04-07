@@ -6,10 +6,11 @@ def valid_signin(user)
   click_button "Sign in"
 end
 
-RSpec::Matchers.define :have_error_message do |message|
-  match do |page|
-    expect(page).to have_selector('div.alert.alert-error', text: message)
-  end
+def fill_in_information(user)
+  fill_in "Email", with: user.email
+  fill_in "Name", with: user.name
+  fill_in "Password", with: user.password
+  fill_in "Confirmation", with: user.password
 end
 
 def sign_in(user, options={})
@@ -23,5 +24,11 @@ def sign_in(user, options={})
     fill_in "Email",    with: user.email
     fill_in "Password", with: user.password
     click_button "Sign in"
+  end
+end
+
+RSpec::Matchers.define :have_error_message do |message|
+  match do |page|
+    expect(page).to have_selector('div.alert.alert-error', text: message)
   end
 end

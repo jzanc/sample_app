@@ -10,7 +10,19 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def create
+  def edit
+  end
+
+   def update
+    if @user.update_attributes(user_params)
+      flash[:success] = "Profile updated"
+      redirect_to @user
+    else
+      render 'edit'
+    end
+  end
+
+   def create
     @user = User.new(user_params)
     if @user.save
       sign_in @user
@@ -21,19 +33,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def edit
-  end
-
-  def update
-    if @user.update_attributes(user_params)
-      flash[:success] = "Profile updated"
-      redirect_to @user
-    else
-      render 'edit'
-    end
-  end
-
-  private
+ private
 
     def user_params
       params.require(:user).permit(:name, :email, :password,
@@ -43,10 +43,7 @@ class UsersController < ApplicationController
     # Before filters
 
     def signed_in_user
-      unless signed_in?
-        store_location
-        redirect_to signin_url, notice: "Please sign in."
-      end
+      redirect_to signin_url, notice: "Please sign in." unless signed_in?
     end
 
     def correct_user
